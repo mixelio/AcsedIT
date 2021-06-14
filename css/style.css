@@ -162,16 +162,21 @@ header {
 }
 .header__list li:before {
   content: "";
-  display: block;
+  display: inline-block;
   position: absolute;
   bottom: 0;
   left: 0;
   width: 22px;
   height: 2px;
   color: #433754;
+  z-index: 100;
 }
-.header__list li a {
+.header__list a {
   color: #433754;
+  display: inline-block;
+}
+.header__list a:hover {
+  text-decoration: underline;
 }
 
 .enroll_now {
@@ -183,6 +188,11 @@ header {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 8px;
+}
+.enroll_now:hover {
+  background-color: #fff;
+  color: #f7b517;
+  border: 1px solid #f7b517;
 }
 
 .first-screen {
@@ -257,6 +267,10 @@ h1 {
   border: 1px solid #6059f7;
   text-transform: uppercase;
   font-weight: 700;
+}
+.contact-us:hover {
+  background-color: #6059f7;
+  color: #fff;
 }
 
 .first-screen__img img {
@@ -876,6 +890,11 @@ h1 {
   color: #ffffff;
   text-transform: uppercase;
 }
+.contacts__form button:hover {
+  background: #fff;
+  color: #6059f7;
+  border: 1px solid #6059f7;
+}
 
 .contacts__form_text {
   border: 1px solid #eeeeee;
@@ -915,6 +934,12 @@ footer {
 
 .footer__item {
   flex: 0 1 30%;
+}
+.footer__item a {
+  color: #888888;
+}
+.footer__item a:hover {
+  text-decoration: underline;
 }
 .footer__item:nth-child(1) {
   max-width: 360px;
@@ -1021,4 +1046,9 @@ footer {
   line-height: 17px;
   color: #ffffff;
   text-transform: uppercase;
+}
+.footer__form button:hover {
+  background: #272727;
+  color: #fff;
+  border: 1px solid #6059f7;
 }

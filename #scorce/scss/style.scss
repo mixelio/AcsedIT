@@ -89,21 +89,28 @@ header {
   display: flex;
   justify-content: flex-end;
   li {
+    //padding: 5px 0;
     /* Разобраться с полоской под пунктом меню при наведении */
     margin: 0 0 0 30px;
     position: relative;
     &:before {
       content: "";
-      display: block;
+      display: inline-block;
       position: absolute;
       bottom: 0;
       left: 0;
       width: 22px;
       height: 2px;
       color: #433754;
+      z-index: 100;
     }
-    a {
-      color: #433754;
+  }
+  a {
+    color: #433754;
+    display: inline-block;
+
+    &:hover {
+      text-decoration: underline;
     }
   }
 }
@@ -117,6 +124,11 @@ header {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 8px;
+  &:hover {
+    background-color: #fff;
+    color: #f7b517;
+    border: 1px solid #f7b517;
+  }
 }
 
 .first-screen {
@@ -191,6 +203,10 @@ h1 {
   border: 1px solid #6059f7;
   text-transform: uppercase;
   font-weight: 700;
+  &:hover {
+    background-color: #6059f7;
+    color: #fff;
+  }
 }
 
 .first-screen__img {
@@ -845,6 +861,11 @@ h1 {
     line-height: 17px;
     color: #ffffff;
     text-transform: uppercase;
+    &:hover {
+      background: #fff;
+      color: #6059f7;
+      border: 1px solid #6059f7;
+    }
   }
 }
 
@@ -886,6 +907,12 @@ footer {
 
 .footer__item {
   flex: 0 1 30%;
+  a {
+    color: #888888;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
   &:nth-child(1) {
     max-width: 360px;
     margin: 0 100px 0 0;
@@ -996,5 +1023,10 @@ footer {
     line-height: 17px;
     color: #ffffff;
     text-transform: uppercase;
+    &:hover {
+      background: #272727;
+      color: #fff;
+      border: 1px solid #6059f7;
+    }
   }
 }
