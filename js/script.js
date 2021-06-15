@@ -1,8 +1,19 @@
 "use strict";
 
 $(document).ready(function () {
-  const mediaQuery = window.matchMedia("(max-width: 1009px)");
+  const mediaQuery = window.matchMedia("(max-width: 550px)");
   if (mediaQuery.matches) {
+    $(".testimonials__slider").slick({
+      arrows: true,
+      slidesToShow: 1,
+      infinite: true,
+      speed: 500,
+      autoplaySpeed: 6000,
+    });
+  }
+
+  const mediaQueryMin = window.matchMedia("(max-width: 1009px)");
+  if (mediaQueryMin.matches) {
     $(".testimonials__slider").slick({
       arrows: true,
       slidesToShow: 2,
@@ -11,6 +22,7 @@ $(document).ready(function () {
       autoplaySpeed: 6000,
     });
   }
+
   $(".testimonials__slider").slick({
     arrows: true,
     slidesToShow: 3,

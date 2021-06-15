@@ -302,6 +302,9 @@ h1 {
 .about_us {
   padding: 70px 0 0 0;
 }
+.about_us p {
+  color: #433754;
+}
 .about_us .container {
   padding: 0 15px;
 }
@@ -1507,5 +1510,83 @@ footer {
 
   .first-screen__img {
     background: url("../img/first-screen.svg") 50% 0/contain no-repeat;
+  }
+
+  .about_us {
+    padding-bottom: 50px;
+  }
+
+  .about_us__row .about_us__item {
+    min-width: 100%;
+  }
+
+  .instructor {
+    padding: 0;
+  }
+  .instructor img {
+    width: 90%;
+  }
+  .instructor .instructor__container {
+    padding: 35px 0px 65px;
+  }
+
+  .instructor__container {
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  .sat_class {
+    background: #fafafa;
+  }
+
+  .testimonials__title {
+    margin-bottom: 25px;
+  }
+
+  .plans__item {
+    border-radius: 50px;
+    padding: 41% 13px 22px;
+    width: 85%;
+    margin-bottom: 150px;
+  }
+  .plans__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .quote__row {
+    flex-direction: column;
+  }
+
+  .quote__text p {
+    padding: 15px 0px 0;
+    margin-bottom: 35px;
+  }
+
+  .quote__image {
+    display: none;
+  }
+
+  .contacts__row {
+    flex-direction: column;
+  }
+
+  .contacts__title {
+    margin-bottom: 25px;
+  }
+
+  .contacts__image {
+    margin-bottom: 35px;
+  }
+
+  .form__row {
+    flex-direction: column;
+  }
+  .form__row input {
+    flex: auto;
+    width: 100%;
+    height: 40px;
+    margin: 0 0 20px;
+  }
+  .form__row input:last-child {
+    margin: 0;
   }
 }
