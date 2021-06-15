@@ -1392,9 +1392,9 @@ footer {
 
   .plans__item {
     border-radius: 60px;
-    padding: 25% 13px 22px;
+    padding: 22% 13px 22px;
     flex: 0 0 100%;
-    width: 60%;
+    width: 45%;
     margin-bottom: 150px;
   }
   .plans__item:last-child {
@@ -1423,5 +1423,89 @@ footer {
 
   .plans__item_2 .plans__price {
     transform: translateY(130px);
+  }
+}
+@media (max-width: 840px) {
+  .signupnow {
+    background: #6059f7;
+  }
+
+  footer .footer__row {
+    flex-direction: column;
+  }
+
+  .footer__item {
+    flex: 0 1 100%;
+  }
+  .footer__item:nth-child(1) {
+    max-width: 100%;
+    margin: 0;
+  }
+  .footer__item:nth-child(1) p {
+    margin: 0 0 10px 0;
+  }
+  .footer__item:nth-child(2) {
+    max-width: 130px;
+    margin: 0 0 20px;
+  }
+  .footer__item:nth-child(3) {
+    max-width: 130px;
+    margin: 0 0 20px;
+  }
+  .footer__item:nth-child(4) p {
+    margin-bottom: 12px;
+  }
+  .footer__item p {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .footer__logo {
+    margin-bottom: 15px;
+  }
+
+  .footer__social {
+    margin-bottom: 30px;
+  }
+  .footer__social .facebook {
+    background: url("../img/facebook.svg") 0 0/cover no-repeat;
+  }
+  .footer__social .instagram {
+    background: url("../img/instagram.svg") 0 0/cover no-repeat;
+  }
+  .footer__social .pinterest {
+    background: url("../img/pinterest.svg") 0 0/cover no-repeat;
+  }
+  .footer__social .youtube {
+    background: url("../img/youtube.svg") 0 0/cover no-repeat;
+    transform: translateY(-1px);
+    margin: 0;
+    height: 116%;
+  }
+}
+@media (max-width: 550px) {
+  header {
+    padding: 15px 0 0 0;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  .first-screen__text {
+    font-size: 14px;
+    margin: 0 0 40px;
+  }
+
+  .header__row {
+    align-items: flex-start;
+  }
+
+  .title {
+    font-size: 25px;
+  }
+
+  .first-screen__img {
+    background: url("../img/first-screen.svg") 50% 0/contain no-repeat;
   }
 }
