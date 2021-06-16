@@ -330,6 +330,9 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  img {
+    width: 100%;
+  }
 }
 
 .why__row_1 {
@@ -1029,6 +1032,7 @@ footer {
 }
 
 .footer__form {
+  margin: 0 0 10px 0;
   .input {
     display: inline-block;
     width: 100%;
@@ -1092,7 +1096,9 @@ footer {
   header {
     padding: 20px 0;
   }
-
+  ._lock {
+    overflow: hidden;
+  }
   .first-screen {
     .cloud_1,
     .cloud_2,
@@ -1134,10 +1140,13 @@ footer {
       width: 100%;
     }
   }
-
-  .header__menu {
+  header {
+  }
+  .header__row {
     position: relative;
-
+  }
+  .header__menu {
+    //  position: relative;
     .menu__icon {
       display: block;
       z-index: 11;
@@ -1198,7 +1207,7 @@ footer {
       visibility: hidden;
       transform: translateY(-100%);
 
-      width: 300px;
+      width: 100%;
       height: auto;
       padding: 70px 0 50px;
       transition-duration: 500ms;
@@ -1513,7 +1522,8 @@ footer {
     font-size: 25px;
   }
   .first-screen__img {
-    background: url("../img/first-screen.svg") 50% 0 / contain no-repeat;
+    background: url("../img/first-screen.svg") 50% 0/100% auto no-repeat;
+    min-height: 300px;
   }
   .about_us {
     padding-bottom: 50px;

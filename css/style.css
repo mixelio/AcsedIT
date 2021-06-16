@@ -380,6 +380,9 @@ h1 {
   justify-content: space-between;
   align-items: center;
 }
+.why__row img {
+  width: 100%;
+}
 
 .why__row_1 {
   margin-bottom: 70px;
@@ -1056,6 +1059,9 @@ footer {
   margin-bottom: 0px;
 }
 
+.footer__form {
+  margin: 0 0 10px 0;
+}
 .footer__form .input {
   display: inline-block;
   width: 100%;
@@ -1118,6 +1124,10 @@ footer {
     padding: 20px 0;
   }
 
+  ._lock {
+    overflow: hidden;
+  }
+
   .first-screen .cloud_1,
 .first-screen .cloud_2,
 .first-screen .sun,
@@ -1150,9 +1160,10 @@ footer {
     width: 100%;
   }
 
-  .header__menu {
+  .header__row {
     position: relative;
   }
+
   .header__menu .menu__icon {
     display: block;
     z-index: 11;
@@ -1207,7 +1218,7 @@ footer {
     opacity: 0;
     visibility: hidden;
     transform: translateY(-100%);
-    width: 300px;
+    width: 100%;
     height: auto;
     padding: 70px 0 50px;
     transition-duration: 500ms;
@@ -1509,7 +1520,8 @@ footer {
   }
 
   .first-screen__img {
-    background: url("../img/first-screen.svg") 50% 0/contain no-repeat;
+    background: url("../img/first-screen.svg") 50% 0/100% auto no-repeat;
+    min-height: 300px;
   }
 
   .about_us {
