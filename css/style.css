@@ -1520,7 +1520,7 @@ footer {
   }
 
   .first-screen__img {
-    background: url("../img/first-screen.svg") 50% 0/100% auto no-repeat;
+    background: url("../img/first-screen.svg") 50% 0/auto 100% no-repeat;
     min-height: 300px;
   }
 
